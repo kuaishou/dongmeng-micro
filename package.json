@@ -1,0 +1,14 @@
+{
+  "name": "dongmeng-micro",
+  "version": "1.0.1",
+  "description": "东萌微前端框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "微前端"
+  ],
+  "author": "邢浩东",
+  "license": "ISC"
+}

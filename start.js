@@ -2,6 +2,7 @@ import { setList, getList } from "./const/subApps"//设置子应用
 import { setMainLifeCycle } from "./const/mainLifeCycle"//设置子应用
 import { rewriteRouter } from "./router/rewriteRouter"//设置子应用
 import { currentApp } from "./utils/index";
+import { prefetch } from "./loader/prefetch";
 
 // import { Custom } from "./customevent/index";
 //custom父子通讯--不常用
@@ -44,6 +45,6 @@ export const start = () => {//开启微前端框架
         window.__CURRENT_SUB_APP__ = app.activeRule//防止多次触发
         window.history.pushState('', '', url)
     }
-
-
+    //预加载-加载接下来所有子应用但是不显示prefetch
+    prefetch()
 }
